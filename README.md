@@ -1,5 +1,5 @@
 # Public Crawler
-A collection of crawler project for Indonesia dataset
+A collection of crawler project for Indonesia dataset. Data collected will be saved as separate csv files for each item type.
 
 ## Contents
 
@@ -15,11 +15,12 @@ A collection of crawler project for Indonesia dataset
 | [jobsid](https://github.com/im-perativa/public_crawler/tree/main/jobsid) | Job vacancy | [https://www.jobs.id/](https://www.jobs.id/) |
 | [kpu](https://github.com/im-perativa/public_crawler/tree/main/kpu) | 2019 general election result | [https://pemilu2019.kpu.go.id](https://pemilu2019.kpu.go.id) |
 | [master_bps](https://github.com/im-perativa/public_crawler/tree/main/master_bps) | Indonesia administrative list with bridging code between Statistics Indonesia and Ministry of Internal Affairs | [https://sig.bps.go.id/bridging-kode/index](https://sig.bps.go.id/bridging-kode/index) |
+| [sirs](https://github.com/im-perativa/public_crawler/tree/main/sirs) | Hospitals data from Ministry of Health | [https://sirs.kemkes.go.id](https://sirs.kemkes.go.id) |
 
 ## Usage
 
 ```
 pip install -r requirements.txt
 cd <crawler_directory>
-scrapy crawl <spider_name> -o result.csv
+scrapy crawl <spider_name>
 ```

@@ -62,9 +62,9 @@ CONCURRENT_REQUESTS = 50
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'jobsid.pipelines.jobsidPipeline': 300,
-# }
+ITEM_PIPELINES = {
+  'jobsid.pipelines.CSVperItemPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
